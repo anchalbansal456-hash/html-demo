@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1  id="title">Student Feedback Survey</h1>
+    <p id="description">Please fill out this short survey abot your learning experience.</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label><br>
+      <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+      <label id="email-label" for="email">Email:</label><br>
+      <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" placeholder="Enter your age" min="10" max="100"><br><br>
+
+      <label for="dropdown">Favorite Subject:</label>
+      <select id="dropdown">
+        <option value="computer science">Computer Science</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="english">English</option>
+      </select>
+      <br><br>
+
+      <p>How do you attend classes?</p>
+      <input type="radio" id="offline" name="mode" value="Offline">
+      <label for="offline">Offline</label>
+      <input type="radio" id="online" name="mode" value="Online">
+      <label for="online">Online</label>
+      <br><br>
+
+      <p>What do you enjoy? (Select all that apply)</p>
+      <input type="checkbox" value="Coding">Coding<br>
+      <input type="checkbox" value="Projects">Projects<br>
+      <input type="checkbox" value="Group Study">Group Study<br><br>
+
+      <label for="comments">Comments</label><br>
+      <textarea id="comments" placeholder="Write your feedback here" rows="5" cols="30"></textarea>
+      <br><br>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
